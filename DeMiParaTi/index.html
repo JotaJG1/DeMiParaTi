@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#211217">
+  <meta name="description" content="Una historia hecha para Juan y Briggitte.">
+  <title>Juan & Briggitte | Nuestra historia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="intro" id="intro">
+    <div class="intro-orbit orbit-one"></div><div class="intro-orbit orbit-two"></div>
+    <div class="intro-copy"><span class="eyebrow">Una historia para guardar</span><span class="intro-number">01 / 01</span></div>
+    <button class="envelope-button" id="envelopeButton" aria-label="Abrir la carta para Briggitte">
+      <span class="envelope-glow"></span>
+      <span class="envelope">
+        <span class="envelope-paper"><span>Para Briggitte</span><strong>con amor</strong></span>
+        <span class="envelope-back"></span><span class="envelope-flap"></span><span class="envelope-front"></span>
+        <span class="envelope-seal">♥</span>
+      </span>
+    </button>
+    <div class="intro-bottom"><p>Para Briggitte <span>♥</span></p><button class="open-hint" id="openHint">Toca para abrir <i>↗</i></button></div>
+  </div>
+
+  <main id="mainContent" class="is-locked">
+    <section class="hero section-pad" id="historia" data-section="historia">
+      <div class="hero-bloom bloom-left"></div><div class="hero-bloom bloom-right"></div>
+      <div class="hero-inner reveal"><p class="eyebrow light">J + B · desde 2021</p><h1>Juan <em>♥</em><br>Briggitte</h1><p class="hero-lead">Hay historias que no se cuentan.<br>Se sienten, se eligen y se vuelven a elegir.</p><button class="button button-light" data-scroll="historia-start">Comenzar <span>↓</span></button></div>
+      <div class="hero-side-note">NUESTRA<br>PEQUEÑA<br>HISTORIA</div><div class="scroll-mark">desliza para descubrir <span>↓</span></div>
+    </section>
+
+    <section class="story section-pad" id="historia-start">
+      <div class="section-heading reveal"><p class="eyebrow">Capítulo uno</p><h2>Lo nuestro,<br><i>sin prisa.</i></h2><p class="section-intro">Un día cualquiera se convirtió en el inicio de todo. Desde entonces, cada momento tiene un poco más de sentido.</p></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span class="timeline-dot">01</span><div><p class="eyebrow">El comienzo · 15.06.21</p><h3>El primer capítulo</h3><p>Dos personas, una conversación y esa sensación extraña de haber encontrado un lugar conocido en alguien nuevo.</p></div></article>
+        <article class="timeline-item reveal"><span class="timeline-dot">02</span><div><p class="eyebrow">Todavía aquí · siempre</p><h3>Elegirnos a diario</h3><p>Entre planes improvisados, risas que duelen y silencios cómodos, fuimos haciendo hogar en los detalles.</p></div></article>
+      </div>
+      <div class="counter-wrap reveal"><div><p class="eyebrow">Tiempo compartido</p><h3>Y seguimos<br><i>sumando.</i></h3></div><div class="counter-grid" id="counterGrid"><div><strong>00</strong><span>Años</span></div><div><strong>00</strong><span>Meses</span></div><div><strong>00</strong><span>Días</span></div><div><strong>00</strong><span>Horas</span></div><div><strong>00</strong><span>Minutos</span></div><div><strong>00</strong><span>Segundos</span></div></div></div>
+    </section>
+
+    <section class="memories section-pad" id="recuerdos" data-section="recuerdos">
+      <div class="section-heading reveal"><p class="eyebrow">Capítulo dos</p><h2>Nuestros<br><i>recuerdos.</i></h2><p class="section-intro">16 momentos que guardaría mil veces. Desliza para volver a cualquier pequeño instante.</p></div>
+      <div class="memory-carousel reveal" id="memoryCarousel" role="region" aria-roledescription="carrusel" aria-label="Nuestros recuerdos">
+        <button class="carousel-arrow carousel-prev" id="memoryPrev" aria-label="Fotografía anterior">←</button>
+        <div class="carousel-stage" id="memoryStage"><div class="carousel-track" id="memoryTrack"></div></div>
+        <button class="carousel-arrow carousel-next" id="memoryNext" aria-label="Fotografía siguiente">→</button>
+      </div>
+      <div class="carousel-info reveal"><span class="carousel-counter" id="memoryCounter">01 / 16</span><button class="autoplay-button" id="autoplayButton" aria-label="Pausar reproducción automática" aria-pressed="true">Ⅱ</button></div>
+      <div class="carousel-dots reveal" id="memoryDots" aria-label="Seleccionar recuerdo"></div>
+      <div class="memory-caption reveal"><p class="eyebrow" id="memoryDate">archivo de momentos</p><h3 id="memoryTitle">Un recuerdo para volver</h3><p id="memoryDescription">Cada fotografía guarda una pequeña parte de nuestra historia.</p></div>
+      <div class="memory-stamp reveal">J + B<br><small>archivo de momentos</small></div>
+    </section>
+
+    <section class="vouchers section-pad" id="vales" data-section="vales"><div class="section-heading reveal"><p class="eyebrow">Capítulo tres</p><h2>Vales para<br><i>nosotros.</i></h2><p class="section-intro">Pequeñas promesas para usar cuando el momento lo pida. Elige uno para verlo de cerca.</p></div><div class="voucher-grid" id="voucherGrid"></div></section>
+
+    <section class="final section-pad"><div class="final-inner reveal"><p class="eyebrow light">Última página, por ahora</p><h2>Y todavía nos quedan<br><i>muchas páginas.</i></h2><p>Gracias por convertir lo cotidiano en algo extraordinario.</p><button class="button button-light" id="letterButton">Leer mi carta <span>♥</span></button><p class="signature">Con amor,<br><strong>Juan</strong></p></div></section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegación principal"><a href="#historia" data-nav="historia" class="active"><span>♥</span><small>Historia</small></a><a href="#recuerdos" data-nav="recuerdos"><span>▧</span><small>Recuerdos</small></a><a href="#vales" data-nav="vales"><span>◇</span><small>Vales</small></a></nav>
+  <button class="music-button" id="musicButton" aria-label="Reproducir o pausar música">♫<span class="music-tooltip">Música</span></button><audio id="music" loop preload="none"></audio>
+
+  <div class="modal" id="lightbox" aria-hidden="true"><div class="modal-backdrop"></div><div class="lightbox-content"><button class="modal-close" data-close aria-label="Cerrar fotografía">×</button><button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Fotografía anterior">←</button><img id="lightboxImage" src="" alt=""><button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Fotografía siguiente">→</button><div class="lightbox-copy"><p id="lightboxCaption"></p><small id="lightboxDate"></small><span id="lightboxCounter">01 / 16</span></div></div></div>
+  <div class="modal" id="voucherModal" aria-hidden="true"><div class="modal-backdrop"></div><div class="voucher-detail"><button class="modal-close" data-close aria-label="Cerrar vale">×</button><span class="voucher-detail-icon" id="voucherIcon"></span><p class="eyebrow">vale especial</p><h3 id="voucherTitle"></h3><p id="voucherDescription"></p><div class="voucher-conditions"><span>condiciones</span><b id="voucherConditions"></b></div><button class="button button-dark" id="redeemButton">Canjear <span>♥</span></button><p class="redeemed-message" id="redeemedMessage">✓ Este vale ya fue canjeado</p></div></div>
+  <div class="modal" id="letterModal" aria-hidden="true"><div class="modal-backdrop"></div><article class="letter-card"><button class="modal-close" data-close aria-label="Cerrar carta">×</button><p class="eyebrow">Para Briggitte ♥</p><h3>Mi persona favorita,</h3><p>Si pudiera guardar un solo lugar para volver una y otra vez, sería cualquier sitio donde estés tú. Gracias por cada risa, cada abrazo y cada día compartido.</p><p>Te elegiría en esta vida y en todas las que nos falten.</p><p class="letter-signature">Con amor,<br><strong>Juan</strong></p></article></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
